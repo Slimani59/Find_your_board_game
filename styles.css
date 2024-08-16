@@ -1,0 +1,21 @@
+* {
+    text-align: center;
+    background-color: #FAECD7;
+}
+
+#number-players-div {
+    margin: auto;
+    max-width: 350px;
+    min-height: 400px;
+    max-height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-evenly;
+}
+
+.player-image {
+    width: 100px;
+    height: 100px;
+}
