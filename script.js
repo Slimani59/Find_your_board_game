@@ -25,4 +25,25 @@ window.onload = function(){
     five_player_div.addEventListener("click", () => selectNumberPlayers(five_player_div, 5));
     six_player_div.addEventListener("click", () => selectNumberPlayers(six_player_div, 6));
     more_player_div.addEventListener("click", () => selectNumberPlayers(more_player_div, 7));
+
+    let time_of_game = 0
+
+    let fifteen_minutes_div = document.getElementById("15-minutes-div");
+    let thirty_minutes_div = document.getElementById("30-minutes-div");
+    let fourty_five_mintes_div = document.getElementById("45-minutes-div");
+    let sixty_minutes_div = document.getElementById("60-minutes-div");
+    let time_div = document.getElementsByClassName("time-images-div");
+
+    function selectTime(div, time) {
+        for (let i = 0; i < time_div.length; i++){
+            time_div[i].style.backgroundColor = "#FAECD7";
+        };
+        div.style.backgroundColor = "#720004";
+        time_of_game = time;
+    }
+
+    fifteen_minutes_div.addEventListener("click", () => selectTime(fifteen_minutes_div, 15));
+    thirty_minutes_div.addEventListener("click", () => selectTime(thirty_minutes_div, 30));
+    fourty_five_mintes_div.addEventListener("click", () => selectTime(fourty_five_mintes_div, 45));
+    sixty_minutes_div.addEventListener("click", () => selectTime(sixty_minutes_div, 60));
 };
