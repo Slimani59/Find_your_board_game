@@ -71,3 +71,21 @@
     cursor: pointer;
     background-color: transparent;
 }
+
+#type-div{
+    margin: auto;
+    max-width: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-evenly;
+}
+
+.type-image{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+}
